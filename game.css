@@ -1,0 +1,40 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 1.4rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86,165,235,0.25);
+    background-color: white;
+    z-index: 1;
+}
+
+.choice-container:hover{
+  cursor: pointer;
+  /* box-shadow: 0 0.4rem 1.4rem 0  #39FF14(86, 185, 235, 0.5); */
+  transform: translate(-0.5rem);
+  transition: transform 200ms;
+  /* transition-delay: 1s; */
+  
+  color: #56a5eb;
+  background: white;
+  box-shadow: 0 0 20px #56a5eb ;
+  /* transition-delay: 1s; */
+
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb; 
+    color: white;
+}
+
+.choice-text{
+    padding: 1.5rem;
+}
+h2{
+    margin-bottom: 3rem;
+    color: #56a5eb;
+}
+/* .container {
+    background-color: aliceblue;
+} */
