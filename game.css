@@ -1,40 +1,106 @@
-.choice-container{
-    display: flex;
-    margin-bottom: 1.4rem;
-    width: 100%;
-    font-size: 1.8rem;
-    border: 0.1rem solid rgba(86,165,235,0.25);
-    background-color: white;
-    z-index: 1;
+.choice-container {
+  display: flex;
+  margin-bottom: 1.4rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(86, 165, 235, 0.25);
+  background-color: white;
+  z-index: 1;
 }
 
-.choice-container:hover{
+.choice-container:hover {
   cursor: pointer;
   /* box-shadow: 0 0.4rem 1.4rem 0  #39FF14(86, 185, 235, 0.5); */
   transform: translate(-0.5rem);
   transition: transform 200ms;
   /* transition-delay: 1s; */
-  
+
   color: #56a5eb;
   background: white;
-  box-shadow: 0 0 20px #56a5eb ;
+  box-shadow: 0 0 20px #56a5eb;
   /* transition-delay: 1s; */
-
 }
 
 .choice-prefix {
-    padding: 1.5rem 2.5rem;
-    background-color: #56a5eb; 
-    color: white;
+  padding: 1.5rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
 }
 
-.choice-text{
-    padding: 1.5rem;
+.choice-text {
+  padding: 1.5rem;
 }
-h2{
-    margin-bottom: 3rem;
-    color: #56a5eb;
+h2 {
+  margin-bottom: 3rem;
+  color: #56a5eb;
 }
 /* .container {
     background-color: aliceblue;
 } */
+
+.choice-container correct {
+  background-color: #56a5eb;
+}
+.choice-container incorrect {
+  background-color: #dc3545;
+}
+
+/*       HUD       */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix,
+.hud-main-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #56a5eb;
+  padding: 1rem 1.5rem;
+  font-weight: 100;
+}
+
+.hud-main-text {
+  font-size: 8rem;
+  margin-top: -3rem;
+  font-weight: 500;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+/* loader */
+
+
+#loader {
+  border: 1.6rem solid #56a5eb;
+  border-radius: 50%;
+  border-top: 1.6rem solid #032321;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+  /* background: #042104; */
+  /* box-shadow: 0 0 10px #56a5eb , 0 0 40px #56a5eb ,0 0 80px #56a5eb; */
+  transition-delay: 0.2s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

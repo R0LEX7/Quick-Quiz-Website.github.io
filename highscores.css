@@ -1,0 +1,25 @@
+#highScoresList {
+    list-style: ABC;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  
+  .high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .high-score:hover {
+    transform: scale(1.125);
+    transition-delay: 250ms;
+  }/* highscores */
+
+#highScoresList {
+  color : #56a5eb;
+  margin-top: 3rem;
+
+}
+
+#highScores h1 {
+  font-size: 6rem;
+}
